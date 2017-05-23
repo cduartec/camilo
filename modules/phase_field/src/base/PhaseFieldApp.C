@@ -59,6 +59,7 @@
 #include "MatReaction.h"
 #include "MultiGrainRigidBodyMotion.h"
 #include "PFFracBulkRate.h"
+#include "PFFracBulkRateNob.h"
 #include "PFFracCoupledInterface.h"
 #include "SimpleACInterface.h"
 #include "SimpleCHInterface.h"
@@ -146,6 +147,7 @@
 #include "GrainAdvectionVelocity.h"
 #include "InterfaceOrientationMaterial.h"
 #include "KKSXeVacSolidMaterial.h"
+#include "LinearIsoElasticPFDamageMiehe.h"
 #include "MathEBFreeEnergy.h"
 #include "MathFreeEnergy.h"
 #include "MultiBarrierFunctionMaterial.h"
@@ -345,6 +347,7 @@ PhaseFieldApp::registerObjects(Factory & factory)
   registerKernel(MatReaction);
   registerKernel(MultiGrainRigidBodyMotion);
   registerKernel(PFFracBulkRate);
+  registerKernel(PFFracBulkRateNob);
   registerKernel(PFFracCoupledInterface);
   registerKernel(SimpleACInterface);
   registerKernel(SimpleCHInterface);
@@ -418,6 +421,7 @@ PhaseFieldApp::registerObjects(Factory & factory)
   registerMaterial(GrainAdvectionVelocity);
   registerMaterial(InterfaceOrientationMaterial);
   registerMaterial(KKSXeVacSolidMaterial);
+  registerMaterial(LinearIsoElasticPFDamageMiehe);
   registerMaterial(MathEBFreeEnergy);
   registerMaterial(MathFreeEnergy);
   registerMaterial(MultiBarrierFunctionMaterial);
